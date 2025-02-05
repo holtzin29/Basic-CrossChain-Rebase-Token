@@ -115,5 +115,5 @@ TokenAdminRegistry: Registers the token and assigns admin roles.
 Inspired in Cyfrin CrossChain Rebase Token lessons!
 
 # License
-##  This project is licensed under the MIT License.
+##  MIT License.
   
