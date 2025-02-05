@@ -1,12 +1,12 @@
 # Cross Chain Rebase-Token
 ## Desciption
 ## Overview
--This project implements a rebase token system across multiple blockchains. The token is designed to automatically adjust its supply based on specified parameters, providing a dynamic and adaptive mechanism for token holders. Additionally, it integrates with vaults for deposits, rewards, and interest-bearing features.
+- This project implements a rebase token system across multiple blockchains. The token is designed to automatically adjust its supply based on specified parameters, providing a dynamic and adaptive mechanism for token holders. Additionally, it integrates with vaults for deposits, rewards, and interest-bearing features.
 
--Key features:
+- Key features:
 1. A protocol that allows users to deposit into a vault and in return, receive rebase tokens that represent their underlying balance
 2. Creating a rebase token -> balanceOf function is dynamic to show the changes of the balance within time.
-    -Balance increases linearly with time.
+    - Balance increases linearly with time.
     - Mint token to users every time they perform an action(mint, burn, transfer, bridging) we check if the balance has increased then we mint for them.
 3. Interest rate
 - Individually set an interest rate based on a global interest rate of the protocol at the time an user deposit into the vault
