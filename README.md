@@ -40,12 +40,12 @@ Key Functions:
  - This contract extends TokenPool and allows for locking and minting of rebase tokens across chains.
 
 Key Functions:
-lockOrBurn:
-Validates the transaction and burns the tokens.
-Retrieves the user's interest rate and includes it in the data for cross-chain transactions.
-releaseOrMint:
-Validates the transaction and mints tokens on the destination chain.
-Transfers the stored interest rate to adjust the minted tokens accordingly.
+- lockOrBurn:
+- Validates the transaction and burns the tokens.
+- Retrieves the user's interest rate and includes it in the data for cross-chain transactions.
+- releaseOrMint:
+- Validates the transaction and mints tokens on the destination chain.
+- Transfers the stored interest rate to adjust the minted tokens accordingly.
 
 # Tests
 ## RebaseTokenTest.t.sol
@@ -95,18 +95,18 @@ Transfers the stored interest rate to adjust the minted tokens accordingly.
 ## Deployer.s.sol
 - This repository contains two deployment scripts: TokenAndPoolDeployer and VaultDeployer. These deploy and configure the necessary smart contracts for a rebase token and its associated vault/pool, as well as integrate them with Chainlink's CCIP infrastructure.
 - 
--Key Functions
+- Key Functions
 
--TokenAndPoolDeployer
+- TokenAndPoolDeployer
 Deploys a RebaseToken and a RebaseTokenPool.
 Registers the token with its admin and assigns minting/burning roles to the pool.
 Connects the pool with the TokenAdminRegistry.
 
--VaultDeployer
+- VaultDeployer
 Deploys a Vault that works with the RebaseToken.
 Grants the vault minting and burning roles for the token.
 
-It also uses some requirements like:
+- It also uses some requirements like:
 CCIPLocalSimulatorFork: Used for the local Chainlink simulator.
 RebaseToken & RebaseTokenPool: For the token and its associated pool.
 TokenAdminRegistry: Registers the token and assigns admin roles.
