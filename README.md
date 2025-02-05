@@ -13,6 +13,13 @@
 - The global interest can only decrease to get more rewards to early adopters.
 - Increase token adoption
 
+  ## Technologies used:
+- Solidity: The smart contract language used for writing the deployment scripts and the token logic.
+- Chainlink CCIP (Cross-Chain Interoperability Protocol): Facilitates seamless cross-chain communication, enabling token transfers and interaction across different blockchain networks.
+- OpenZeppelin: Provides secure, community-vetted implementations of standards like ERC20, used for token interaction.
+- Foundry: Good framework that provides some cheatcodes for solidity
+- Chainlink's Token Pool & Rate Limiter: Enables rate-controlled token pools for optimized cross-chain transactions.
+
 
 # Files
 
